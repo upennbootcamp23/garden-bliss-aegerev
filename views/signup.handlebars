@@ -1,0 +1,39 @@
+<head>
+<link rel="stylesheet" href="/css/signup.css">
+</head>
+
+  <div class="container">
+    <div class="signup-form">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h1>Sign Up</h1>
+    </div>
+      <h4>It's free and only takes a minute</h4>
+      
+      <form class="card-body"> <!-- action="/api/users/signup" method="POST"  Check login route -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Create a username" required autocomplete="username" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password: 8 chars min</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        </div>  
+        <div class="form-group">
+          <label for="confirmpassword">Confirm Password</label>
+          <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" id="signupbtn" name="signupbtn" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <div>
+      <p class="para-2">Already have an account? <a href="/login">Login here</a></p>
+    </div>
+  </div>
+
+<script src="/js/signup.js"></script>
